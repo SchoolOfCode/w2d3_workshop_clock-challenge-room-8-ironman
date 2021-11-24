@@ -35,6 +35,13 @@ img {
   border-top: 120px solid red;
 }
 
+.handHour {
+  position: absolute;
+  height: 120px;
+  width: 5px;
+  border-top: 120px solid blue;
+}
+
 .hide {
   display: none;
 }

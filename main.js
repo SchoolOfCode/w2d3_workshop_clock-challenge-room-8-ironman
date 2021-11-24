@@ -1,5 +1,6 @@
 const hand = document.querySelector(".hand");
 const handMin = document.querySelector(".handMin");
+const handHour = document.querySelector(".handHour");
 
 //Initialize the variable to be numbers
 // let count = 0;
@@ -24,7 +25,7 @@ const handMin = document.querySelector(".handMin");
 
 let sec = 0;
 let min = 0;
-
+let hr = 0;
 function clockMove() {
     const d = new Date();
     let seconds = d.getSeconds();
@@ -37,9 +38,11 @@ function clockMove() {
 
     min = minutes * 6;
 
-    //console.log(min);
-
     handMin.style.transform = `rotate(${min}deg)`;
+
+    hr = hours* 30;
+
+    handHour.style.transform = `rotate(${hr}deg)`;
 }
 
 let intervalID = setInterval(clockMove, 1000);
