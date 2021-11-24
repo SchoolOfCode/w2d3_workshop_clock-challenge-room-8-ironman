@@ -27,6 +27,14 @@ img {
   width: 5px;
   border-top: 120px solid black;
 }
+
+.handMin {
+  position: absolute;
+  height: 120px;
+  width: 5px;
+  border-top: 120px solid red;
+}
+
 .hide {
   display: none;
 }
